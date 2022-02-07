@@ -1,0 +1,12 @@
+/* custom css */
+
+.site-title a[data-v-07005330]{
+    font-size: 0px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
