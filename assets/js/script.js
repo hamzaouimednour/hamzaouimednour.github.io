@@ -2,7 +2,7 @@
 
 new Docute({
     target: '#docute',
-    title: 'Dragunov - Writeups',
+    title: 'Infosec Writeups',
     sourcePath: './docs/',
     darkThemeToggler: true,
     logo: '<img src="/assets/img/github.png" width="32px"/>',

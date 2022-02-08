@@ -1,12 +1,10 @@
 # ~$ whoami
 <img src="/assets/img/me.png" border="true" class="center"/>
 
-Hey there, I'm `Hamzaoui Mohamed Nour` a.k.a `Dragunov`, Tunisian pentester & web dev.
-I like playing CTFs & hacking arround (HTB, THM, CyberTalents, CyberEdu, ...).
+Hey there, I'm `Hamzaoui Mohamed Nour` a.k.a Dragunov, Tunisian pentester & web dev. I like playing CTFs & Hacking arround (HTB, THM, CyberTalents, CyberEdu, ...). Not too much things to say, enjoy. toodles !
 
 <Badge>Linux</Badge> <Badge type="warning">Python | PHP</Badge> <Badge>Web Exploitation</Badge> <Badge>DFIR</Badge> <Badge type="danger">CTF</Badge> 
 
-That's all about me not too much things to say, enjoy. toodles !
 
 ### @contact
 <div id="contact" href="#contact">
