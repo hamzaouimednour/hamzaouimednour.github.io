@@ -11,6 +11,9 @@ new Docute({
     cssVariables: {
         headerHieght: '50px'
     },
+    cssVariables(theme) {
+        return theme === 'dark' ? {pageBackground: '#292a2d'} : {pageBackground: 'var(--page-background)'}
+    },
 
     /* navbar */
     nav: [
