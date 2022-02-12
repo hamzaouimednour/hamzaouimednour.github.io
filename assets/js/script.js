@@ -37,6 +37,10 @@ new Docute({
                 {
                     title: 'Paper',
                     link: '/HTB/paper/'
+                },
+                {
+                    title: 'Pandora',
+                    link: '/HTB/pandora/'
                 }
             ]
         },
