@@ -5,7 +5,7 @@ new Docute({
     title: 'Infosec Writeups',
     sourcePath: './docs/',
     darkThemeToggler: true,
-    logo: '<img src="/assets/img/github.png" width="32px"/>',
+    logo: '<img src="/assets/img/github.png" width="32px" onclick="location.href=\'//github.com/hamzaouimednour\'"/>',
     
     /* css */
     cssVariables: {
