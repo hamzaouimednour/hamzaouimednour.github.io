@@ -44,6 +44,10 @@ new Docute({
                 {
                     title: 'Pandora',
                     link: '/HTB/pandora/'
+                },
+                {
+                    title: 'Meta',
+                    link: '/HTB/meta/'
                 }
             ]
         },
