@@ -12,7 +12,7 @@ new Docute({
         headerHieght: '50px'
     },
     cssVariables(theme) {
-        return theme === 'dark' ? {pageBackground: '#292a2d'} : {pageBackground: 'var(--page-background)'}
+        return theme === 'dark' ? {pageBackground: '#292a2d'} :{pageBackground: '#fff'}
     },
 
     /* navbar */
@@ -48,6 +48,10 @@ new Docute({
                 {
                     title: 'Meta',
                     link: '/HTB/meta/'
+                },
+                {
+                    title: 'Acute',
+                    link: '/HTB/acute/'
                 }
             ]
         },
