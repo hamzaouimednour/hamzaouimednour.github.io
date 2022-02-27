@@ -52,6 +52,10 @@ new Docute({
                 {
                     title: 'Acute',
                     link: '/HTB/acute/'
+                },
+                {
+                    title: 'RouterSpace',
+                    link: '/HTB/routerspace/'
                 }
             ]
         },
