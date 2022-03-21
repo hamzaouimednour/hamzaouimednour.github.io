@@ -5,6 +5,7 @@ new Docute({
     title: 'Infosec Writeups',
     sourcePath: './docs/',
     darkThemeToggler: true,
+    highlight: ['python', 'php'],
     logo: '<img src="/assets/img/github.png" width="32px" onclick="location.href=\'//github.com/hamzaouimednour\'"/>',
     
     /* css */
@@ -66,6 +67,20 @@ new Docute({
                     title: '',
                     link: '/THM/'
                 }
+            ]
+        },
+        {
+            title: 'Cybertalents',
+            links: [
+                {
+                    title: '',
+                    link: '/Cybertalents/'
+                },
+                {
+                    title: 'Zain CTF',
+                    link: '/Cybertalents/ZainCTF/',
+                    toc: false
+                },
             ]
         },
     ]
