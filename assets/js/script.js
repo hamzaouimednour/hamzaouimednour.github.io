@@ -63,19 +63,11 @@ new Docute({
         {
             title: 'THM',
             links: [
-                {
-                    title: '',
-                    link: '/THM/'
-                }
             ]
         },
         {
             title: 'Cybertalents',
             links: [
-                {
-                    title: '',
-                    link: '/Cybertalents/'
-                },
                 {
                     title: 'Zain CTF',
                     link: '/Cybertalents/ZainCTF/',
